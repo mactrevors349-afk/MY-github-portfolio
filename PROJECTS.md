@@ -1,123 +1,82 @@
-# 📊 Cybersecurity & Development Projects
+# 📊 Cybersecurity & Risk Management Projects
 
-Welcome to my portfolio of cybersecurity and development projects. Below you'll find detailed information about my projects with links to view the code and demos.
+Welcome to my portfolio of cybersecurity and financial risk management projects. Below you'll find detailed information about my projects with links to view the code and demos.
 
 ---
 
-## 🔒 PyCodeScan - Python SAST Security Analysis Tool
+## 🎯 Portfolio Risk Analysis - Financial Risk Management
 
-**Repository:** [PyCodeScan](https://github.com/mactrevors349-afk/PyCodeScan)
+**Repository:** [python](https://github.com/mactrevors349-afk/python)
 
 ### 📋 Project Overview
-A Python-based **Static Application Security Testing (SAST)** tool designed to identify security vulnerabilities and insecure coding patterns in Python source code. PyCodeScan performs line-by-line analysis to detect common security anti-patterns before code is deployed, making it ideal for developers using VS Code or similar IDEs who want a lightweight, fast security scan.
+A comprehensive Python-based financial risk management system focusing on **Portfolio Risk Analysis**. This project analyzes potential losses in an investment portfolio, providing insights into portfolio volatility, value-at-risk (VaR), and risk metrics.
 
 ### 🔑 Key Features
-- 🛡️ **Arbitrary Code Execution Detection**: Identifies risky patterns like `eval()`, `os.system()`, and unsafe `subprocess.run()` calls
-- 🔐 **Insecure Deserialization Scanning**: Flags dangerous functions like `pickle.loads()` and `yaml.load()`
-- ⚠️ **Sensitive Data Exposure**: Detects hardcoded credentials (passwords, API keys)
-- 🔍 **Input Validation Analysis**: Highlights unsanitized user input vulnerabilities
-- 📊 **Line-by-Line Reporting**: Detailed console output with line numbers and vulnerable code snippets
-- ⚡ **Lightweight & Fast**: Quick scanning ideal for local development workflows
-- 🎯 **Educational & Practical**: Built for developers learning security best practices
+- 📈 Portfolio performance analysis
+- 📉 Loss prediction and risk assessment
+- 💰 Value-at-Risk (VaR) calculations
+- 🎲 Monte Carlo simulations for risk scenarios
+- 📊 Data visualization and reporting
+- 📋 Risk metrics and portfolio optimization
 
 ### 🛠️ Technologies Used
 - **Language:** Python
-- **Core Technology:** Pattern-based string matching and lexical analysis
-- **I/O:** File handling and console-based reporting
-- **Focus Areas:** SAST, Code vulnerability detection, Developer security education
+- **Libraries:** NumPy, Pandas, Matplotlib, Scikit-learn
+- **Focus Areas:** Financial mathematics, Risk analysis, Data science
 
-### 📂 Project Architecture
+### 📂 Project Structure
 ```
-PyCodeScan/
-├── vulnerabilityscanner.py    # Core SAST engine
-├── insecure_patterns/         # Vulnerability pattern definitions
-├── reports/                   # Scan output formatting
-├── tests/                     # Test cases
-└── README.md                  # Documentation
+python/
+├── data/              # Portfolio and market data
+├── analysis/          # Risk analysis modules
+├── models/            # Risk calculation models
+├── visualizations/    # Charts and reports
+└── README.md          # Project documentation
 ```
 
 ### 🚀 Getting Started
-To use PyCodeScan:
+To explore this project:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/mactrevors349-afk/PyCodeScan.git
-   cd PyCodeScan
+   git clone https://github.com/mactrevors349-afk/python.git
+   cd python
    ```
 
-2. **Run a security scan:**
+2. **Install dependencies:**
    ```bash
-   python vulnerabilityscanner.py /path/to/python/file.py
+   pip install -r requirements.txt
    ```
 
-3. **Scan entire directory:**
+3. **Run analysis:**
    ```bash
-   python vulnerabilityscanner.py /path/to/project/
+   python main.py
    ```
-
-4. **View detailed results:**
-   - Line numbers with vulnerable patterns
-   - Severity level and vulnerability description
-   - Code snippet context
-   - Remediation recommendations
 
 ### 🔗 Live Links
-- **GitHub Repository:** [mactrevors349-afk/PyCodeScan](https://github.com/mactrevors349-afk/PyCodeScan)
-- **View Code:** [PyCodeScan repository on GitHub](https://github.com/mactrevors349-afk/PyCodeScan/tree/main)
-
-### 📚 Detected Vulnerability Categories
-
-#### 1. **Arbitrary Code Execution**
-- `eval()` function usage
-- `os.system()` shell command execution
-- Unsafe `subprocess.run()` with `shell=True`
-
-#### 2. **Insecure Deserialization**
-- `pickle.loads()` on untrusted data
-- `yaml.load()` (recommends `yaml.safe_load()`)
-
-#### 3. **Sensitive Information Exposure**
-- Hardcoded password variables
-- Hardcoded API keys and credentials
-
-#### 4. **Input Validation Issues**
-- Unvalidated `input()` usage requiring sanitization
-
-### 🎯 Use Cases
-- ✅ Quick local security checks during development
-- ✅ CI/CD pipeline integration for automated scanning
-- ✅ Educational tool for learning secure coding practices
-- ✅ Complement to enterprise SAST/DAST solutions
-- ✅ Developer security awareness training
+- **GitHub Repository:** [mactrevors349-afk/python](https://github.com/mactrevors349-afk/python)
+- **View Code:** [python repository on GitHub](https://github.com/mactrevors349-afk/python/tree/main)
 
 ### 📚 What You'll Learn
-- How SAST tools work at a fundamental level
-- Common Python security anti-patterns
-- Identifying and fixing code execution vulnerabilities
-- Secure deserialization practices
-- Protecting sensitive credentials in code
-- Building security automation tools
-
-### ⚠️ Important Notes
-PyCodeScan is designed as an **educational and lightweight scanning tool** for developers. While effective for catching common insecure patterns, it should be complemented with:
-- Comprehensive SAST tools (Bandit, SonarQube)
-- DAST tools for runtime vulnerability detection
-- Manual security code reviews
-- Professional penetration testing services
+- Portfolio risk analysis techniques
+- Financial data processing with Python
+- Risk quantification methods
+- Data visualization for financial reports
+- Investment strategy optimization
 
 ---
 
 ## 📝 How to Use This Portfolio
 
 This projects page showcases my expertise in:
-- ✅ Static Application Security Testing (SAST)
-- ✅ Python security tooling
-- ✅ Vulnerability detection and analysis
-- ✅ DevSecOps automation
-- ✅ Secure coding practices
-- ✅ Developer security education
+- ✅ Financial risk management
+- ✅ Python development
+- ✅ Data analysis and visualization
+- ✅ Risk quantification
 
 For more information about specific projects, visit the individual repositories linked above.
+
+**For Security & SAST Projects:** Check the [SAST](./SAST) folder in this portfolio.
 
 ---
 
